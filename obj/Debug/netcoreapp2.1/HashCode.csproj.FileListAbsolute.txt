@@ -1,0 +1,11 @@
+/home/dylan/Documents/Misc/HashCode/bin/Debug/netcoreapp2.1/HashCode.deps.json
+/home/dylan/Documents/Misc/HashCode/bin/Debug/netcoreapp2.1/HashCode.runtimeconfig.json
+/home/dylan/Documents/Misc/HashCode/bin/Debug/netcoreapp2.1/HashCode.runtimeconfig.dev.json
+/home/dylan/Documents/Misc/HashCode/bin/Debug/netcoreapp2.1/HashCode.dll
+/home/dylan/Documents/Misc/HashCode/bin/Debug/netcoreapp2.1/HashCode.pdb
+/home/dylan/Documents/Misc/HashCode/obj/Debug/netcoreapp2.1/HashCode.csprojAssemblyReference.cache
+/home/dylan/Documents/Misc/HashCode/obj/Debug/netcoreapp2.1/HashCode.csproj.CoreCompileInputs.cache
+/home/dylan/Documents/Misc/HashCode/obj/Debug/netcoreapp2.1/HashCode.AssemblyInfoInputs.cache
+/home/dylan/Documents/Misc/HashCode/obj/Debug/netcoreapp2.1/HashCode.AssemblyInfo.cs
+/home/dylan/Documents/Misc/HashCode/obj/Debug/netcoreapp2.1/HashCode.dll
+/home/dylan/Documents/Misc/HashCode/obj/Debug/netcoreapp2.1/HashCode.pdb
