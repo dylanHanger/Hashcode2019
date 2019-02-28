@@ -15,7 +15,7 @@ namespace HashCode
             foreach (string file in files)
             {
                 Console.WriteLine(file);
-                // try
+                try
                 {
                     StreamReader sr = new StreamReader("input/" + file + ".txt");
                     int numPhotos = int.Parse(sr.ReadLine());
@@ -31,10 +31,10 @@ namespace HashCode
                     sol.Solve(file + ".txt");
                     sr.Close();
                 }
-                // catch
-                // {
-                //     throw;
-                // }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Exception: " + e.Message);
+                }
             }
         }
     }
@@ -75,24 +75,10 @@ namespace HashCode
         }
         int IComparable.CompareTo(object obj)
         {
-            // Photo other = (Photo)obj;
-            // int comp = other.Tags.Count.CompareTo(this.Tags.Count);
-            // if (comp == 0)
-            // {
-            //     if (this.Horizontal && !other.Horizontal)
-            //     {
-            //         comp = -1;
-            //     }
-            //     else if (other.Horizontal && !this.Horizontal)
-            //     {
-            //         comp = 1;
-            //     }
-            // }
-            // return comp;
             Photo other = (Photo)obj;
             int commonTags = CountCommonTags(this, other);
-            float thisRatio = commonTags / this.Tags.Count;
-            float otherRatio = commonTags / other.Tags.Count;
+            float thisRatio = 0.5f - commonTags / this.Tags.Count;
+            float otherRatio = 0.5f - commonTags / other.Tags.Count;
             int comp = thisRatio.CompareTo(otherRatio);
             if (comp == 0)
             {
